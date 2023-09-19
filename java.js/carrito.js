@@ -1,9 +1,9 @@
-/// carrito.js
+// carrito.js
 
-// Inicializar el carrito a partir de localStorage o crear un arreglo vacío
+// Obtener el carrito desde localStorage o inicializarlo como un arreglo vacío
 let carrito = JSON.parse(localStorage.getItem("carrito")) || [];
 
-// Función para agregar un producto al carrito y actualizar localStorage
+// Función para agregar un producto al carrito
 function agregarAlCarrito(producto) {
     carrito.push(producto);
     actualizarCarrito();
@@ -46,3 +46,4 @@ botonesAgregarAlCarrito.forEach((boton) => {
 window.addEventListener("load", () => {
     actualizarCarrito(); // Actualizar el carrito al cargar la página
 });
+
