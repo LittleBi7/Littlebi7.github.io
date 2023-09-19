@@ -35,3 +35,27 @@ botonesAgregarAlCarrito.forEach((boton) => {
         agregarAlCarrito(producto);
     });
 });
+
+// carrito.js
+
+// Inicializar el carrito a partir de localStorage o crear un arreglo vacío
+let carrito2 = JSON.parse(localStorage.getItem("carrito")) || [];
+
+// Función para agregar un producto al carrito y actualizar localStorage
+function agregarAlCarrito(producto) {
+    carrito.push(producto);
+    actualizarCarrito();
+    actualizarLocalStorage();
+}
+
+// Función para actualizar localStorage con el contenido del carrito
+function actualizarLocalStorage() {
+    localStorage.setItem("carrito", JSON.stringify(carrito));
+}
+
+// Resto del código del archivo carrito.js sin cambios
+
+// carrito.js
+
+
+
