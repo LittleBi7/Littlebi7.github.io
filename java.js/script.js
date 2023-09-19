@@ -1,13 +1,15 @@
 // script.js
 
-// Función que se ejecuta cuando se hace clic en el botón "Agregar al Carrito"
-function agregarAlCarrito() {
-    // Aquí puedes realizar alguna acción, como agregar el producto al carrito
-    alert("Producto agregado al carrito");
+// Función que se ejecuta cuando se hace clic en un botón "Añadir al Carrito"
+function agregarAlCarrito(event) {
+    const producto = event.target.getAttribute("data-producto");
+    alert(`${producto} agregado al carrito`);
 }
 
-// Asociar la función "agregarAlCarrito" al botón por su id
-var botonAgregarAlCarrito = document.getElementById("agregarAlCarrito");
-if (botonAgregarAlCarrito) {
-    botonAgregarAlCarrito.addEventListener("click", agregarAlCarrito);
-}
+// Obtener todos los botones "Añadir al Carrito" por su clase
+const botonesAgregarAlCarrito = document.querySelectorAll(".agregarAlCarrito");
+
+// Agregar un evento de clic a cada botón
+botonesAgregarAlCarrito.forEach((boton) => {
+    boton.addEventListener("click", agregarAlCarrito);
+});
