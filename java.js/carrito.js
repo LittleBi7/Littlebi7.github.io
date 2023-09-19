@@ -3,10 +3,9 @@
 // Obtener el carrito desde localStorage o inicializarlo como un arreglo vacío
 let carrito = JSON.parse(localStorage.getItem("carrito")) || [];
 
-// Función para agregar un producto al carrito
-function agregarAlCarrito(producto) {
+// Función para agregar un producto al carrito y actualizar localStorage
+function agregarAlLocalStorage(producto) {
     carrito.push(producto);
-    actualizarCarrito();
     actualizarLocalStorage();
 }
 
@@ -31,19 +30,7 @@ function actualizarCarrito() {
     contadorCarrito.textContent = carrito.length;
 }
 
-// Obtener todos los botones "Añadir al Carrito" por su clase
-const botonesAgregarAlCarrito = document.querySelectorAll(".agregarAlCarrito");
-
-// Agregar un evento de clic a cada botón
-botonesAgregarAlCarrito.forEach((boton) => {
-    boton.addEventListener("click", () => {
-        const producto = boton.getAttribute("data-producto");
-        agregarAlCarrito(producto);
-    });
-});
-
 // Agregar un evento de carga para inicializar el carrito desde localStorage
 window.addEventListener("load", () => {
     actualizarCarrito(); // Actualizar el carrito al cargar la página
 });
-
