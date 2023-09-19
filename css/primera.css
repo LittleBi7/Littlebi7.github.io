@@ -1,0 +1,108 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4; /* Color de fondo */
+    color: #333; /* Color de texto principal */
+
+}
+
+/* Encabezado */
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+header h1 {
+    font-size: 36px; /* Tamaño de fuente del título */
+    margin: 0;
+    padding: 0;
+}
+
+/* Barra de navegación */
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px; /* Tamaño de fuente de los enlaces de navegación */
+}
+
+/* Sección de productos */
+main section {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); /* Sombra */
+}
+
+main h2 {
+    font-size: 24px;
+    margin: 0;
+    padding: 0;
+}
+
+main ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+main ul li {
+    margin-bottom: 20px;
+    border: 1px solid #ddd; /* Bordes alrededor de los elementos */
+    padding: 10px;
+    border-radius: 5px; /* Bordes redondeados para elementos individuales */
+}
+
+main img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #ccc;
+}
+
+main h3 {
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+main p {
+    margin: 0;
+    padding: 0;
+    line-height: 1.4; /* Espaciado entre líneas */
+}
+
+main button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 16px; /* Tamaño de fuente del botón */
+    border-radius: 5px; /* Bordes redondeados del botón */
+}
+
+main button:hover {
+    background-color: #555;
+}
+
+/* Pie de página */
+footer {
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+}
