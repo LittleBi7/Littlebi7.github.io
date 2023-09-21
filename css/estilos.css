@@ -1,0 +1,240 @@
+/* Estilos generales */
+:root{
+    --padding-container: 100px 0;
+    --color-title: #001A49;
+  }
+  
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    width: 99%;
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: var(--padding-container);
+}
+
+.hero{
+    width: 100%;
+    height: 95vh;
+    min-height: 500px;
+    max-height: 620px;
+    position: relative;
+    display: grid;
+    grid-template-rows: 100px 1fr;
+    color: #151515;
+    text-align: center;
+}
+
+.hero::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(93deg, rgba(255, 255, 255, 0.86) 2%, rgba(0, 0, 0, 0.00) 27%), url('../img/sombrero.png'), lightgray -4.175px -9.457px / 104.375% 120.676% no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    z-index: -1;
+  }
+
+ul {
+    list-style: none;
+}
+
+  /*nav*/
+
+  .nav{
+    --padding-container: 0px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
+
+  .nav__title{
+    font-weight: 300;
+  }
+
+.nav__link{
+   
+    margin-left: auto;
+    padding: 0;
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: max-content;
+    gap: 2em;  
+    align-items: center;
+  }
+
+  .user{
+    position: relative;
+    top: 5px;
+  }
+
+  .nav__items{
+    list-style: none;
+  }
+
+  .nav__links{
+    color: #fff;
+    text-decoration: none;
+  }
+
+
+  .nav__menu{
+    margin-left: auto;
+    cursor: pointer;
+    display: none;
+  }
+
+  .nav__img{
+    display: block;
+    width: 30px;
+  }
+
+  .nav__close{
+    display: var(--show, none);
+  }
+
+  /* hero__container*/
+
+  .hero__container{
+    max-width: 800px;
+    --padding-container:0;
+    display: grid;
+    grid-auto-rows: max-content;
+    align-content: center;
+    gap: 1em;
+    padding-bottom: 100px;
+    text-align: center;
+  }
+
+
+
+  .hero__paragraph{
+    margin-bottom: 20px;
+  }
+
+/* Estilo para el select */
+#moneda #ciudad {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+
+  #ciudad {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  /* Estilo para las opciones (opcional) */
+  #moneda option {
+    font-size: 16px;
+    padding: 5px;
+    background-color: #fff;
+    color: #333;
+  }
+  
+
+/* Estilos de la barra de búsqueda */
+.search-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#searchInput {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    width: 300px;
+}
+
+#searchResults {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 10px;
+    max-height: 200px;
+    overflow-y: auto;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #fff;
+    position: absolute;
+    display: none;
+}
+
+#searchResults li {
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+#searchResults li:hover {
+    background-color: #f4f4f4;
+}
+
+
+/*Galeria*/
+
+.portafolio{
+    background: #f2f2f2;
+}
+
+.galeria-port{
+    padding: 5% 0 0 0;
+    margin: 0 12% 0px 12%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.imagen-port{
+    width: 22%;
+    height: 150px;
+    margin-bottom: 15px;
+    border-radius: 15px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5);
+}
+
+.imagen-port > img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.hover-galeria{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    transform: scale(0);
+    background: hsla(273, 91%, 27%, 0.7);
+    transition: transform .5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.hover-galeria img{
+    width: 50px;
+}
+
+.hover-galeria p{
+    color: #fff;
+}
+
+.imagen-port:hover .hover-galeria{
+    transform: scale(1);
+}
