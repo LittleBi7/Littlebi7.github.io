@@ -97,8 +97,12 @@ ul {
   .nav__links{
     color: #fff;
     text-decoration: none;
+    font-family: 'Domine';
   }
 
+  .links_letrafont{
+    font-family: 'Glory';
+  }
 
   .nav__menu{
     margin-left: auto;
@@ -133,13 +137,14 @@ ul {
     margin-top: 50px;
     text-align: left;
     margin-bottom: 30px;
+    font-family:serif;
     color: #000;
     text-align: center;
-    font-family: 'arial';
     font-size: 2em;
     font-style: normal;
     font-weight: 600;
     line-height: normal;
+    font-family: 'Doppio One';
   }
 
 
@@ -350,7 +355,6 @@ ul {
     margin-bottom: 30px;
     color: #000;
     text-align: center;
-    font-family: 'arial';
     font-size: 2em;
     font-style: normal;
     font-weight: 600;
