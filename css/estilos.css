@@ -1,4 +1,7 @@
-/* Estilos generales */
+/* Importe estos estilos */
+  @import url('https://fonts.googleapis.com/css2?family=Domine:wght@400;500;600;700&family=Doppio+One&family=Emblema+One&family=Glory:ital,wght@0,200;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,800&display=swap');
+
+  /*tipografias( titulo=Domine_articulos  botones=Glory  parrafo=Dophio One  Divicon de sugerencias=Emblema one*/
 :root{
     --padding-container: 100px 0;
     --color-title: #001A49;
@@ -7,12 +10,15 @@
 
 body {
     font-family: Arial, sans-serif;
+    font-family: 'Domine', serif;
+    font-family: 'Doppio One', sans-serif;
+    font-family: 'Emblema One';
+    font-family: 'Glory', sans-serif;
     margin: 0;
     padding: 0;
 }
 
 .container{
-    width: 100%;
     max-width: 1200px;
     margin: 0 auto;
     overflow: hidden;
@@ -102,7 +108,7 @@ ul {
 
   .nav__img{
     display: block;
-    width: 30px;
+    width: 40px;
   }
 
   .nav__close{
@@ -286,9 +292,10 @@ ul {
 
 @media (max-width:800px){
 
+
   .nav{
     margin: 2% 0 0 0 ;
-    --padding-container: 0;
+    --padding-container: 25px 10px 20px 10px;
     height: 100%;
     display: flex;
     align-items: center;
@@ -307,11 +314,10 @@ ul {
   .nav__link--menu{
     position: fixed;
     background-color: #000;
-    top: 0;
+    top: -16px;
     left: 0;
     height: 100%;
     width: 100%;
-    max-width: 700px;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -328,6 +334,29 @@ ul {
     pointer-events: unset;
   }
 
+  .hero__container{
+    width: 100%;
+    --padding-container:0;
+    display: grid;
+    align-content: center;
+    padding-bottom: 100px;
+    text-align: center;
+  }
+
+  .hero__paragraph{
+    width: 100vw;
+    margin-top: 50px;
+    text-align: left;
+    margin-bottom: 30px;
+    color: #000;
+    text-align: center;
+    font-family: 'arial';
+    font-size: 2em;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+  }
+
   .nav__close{
     position: absolute;
     top: 30px;
@@ -339,4 +368,11 @@ ul {
   .hero__title{
     font-size: 2.5rem;
   }
+
+  .search-container {
+    text-align: center;
+    margin-top: 4%;
+    margin-right: 0px;
+}
+
 }
