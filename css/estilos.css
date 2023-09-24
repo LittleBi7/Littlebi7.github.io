@@ -12,7 +12,7 @@ body {
 }
 
 .container{
-    width: 99%;
+    width: 100%;
     max-width: 1200px;
     margin: 0 auto;
     overflow: hidden;
@@ -136,6 +136,8 @@ ul {
     line-height: normal;
   }
 
+
+  
 /* Estilo para el select */
 
   #pais {
@@ -283,8 +285,23 @@ ul {
 
 
 @media (max-width:800px){
+
+  .nav{
+    margin: 2% 0 0 0 ;
+    --padding-container: 0;
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
+  
   .nav__menu{
     display: block;
+    width: 70px;
+  }
+
+  .nav__logo{
+    width: 70%;
+    height: auto;
   }
 
   .nav__link--menu{
@@ -294,6 +311,7 @@ ul {
     left: 0;
     height: 100%;
     width: 100%;
+    max-width: 700px;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
