@@ -8,46 +8,49 @@
 </head> 
 <body>
     <header class="hero">
+
         <nav class="nav container"> 
             <div class="nav__logo">
                 <img src="./img/Logo de la pagina final.png" class="nav__title" alt="CraftedNica">
             </div>
-                <ul class="nav__link nav__link--menu"> 
-                    <li class="nav__items">
-                        <label for="moneda" class="nav__links"> Moneda: </label>
-                        <select id="moneda" name="moneda" class="links_letrafont">
-                        <option value="cordoba">NIOC$ </option>
-                        <option value="dolar">USD$</option>                    
+            <ul class="nav__link nav__link--menu"> 
+                <li class="nav__items">
+                    <label for="moneda" class="nav__links"> Moneda: </label>
+                    <select id="moneda" name="moneda" class="links_letrafont">
+                    <option value="cordoba">NIOC$ </option>
+                    <option value="dolar">USD$</option>                    
+                    </select>
+                </li>                
+                <li class="nav__items">
+                    <label for="pais" class="nav__links"> Envia a: </label>
+                    <select id="pais" name="pais" class="links_letrafont">
+                        <option value="Nicaragua">Nicaragua </option>
+                        <option value="Estados_Unidos">Estados Unidos</option>
+                        <option value="Mexico">Mexico</option>                     
                         </select>
-                    </li>
-                    <li class="nav__items">
-                        <img src="./img/inicio de secion.svg" class="user" width="25px" height="25px" alt="User">
-                        <label for="sesion" class="nav__links"> Inicia Sesion </label>
-                    </li>
-                    <li class="nav__items">
-                        <label for="pais" class="nav__links"> Envia a: </label>
-                        <select id="pais" name="pais" class="links_letrafont">
-                            <option value="Nicaragua">Nicaragua </option>
-                            <option value="Estados_Unidos">Estados Unidos</option>
-                            <option value="Mexico">Mexico</option>                     
-                            </select>
-                    </li>
+                </li>
+                <li class="nav__items">
+                    <img src="./img/inicio de secion.svg" class="user" width="25px" height="25px" alt="User">
+                    <a href="#" class="login-link">Inicia Sesión</a>
+                </li>
+                <img src="img/exit.svg" class= "nav__close" alt="Salir">
+            </ul>
 
-                    <img src="img/exit.svg" class= "nav__close" alt="Salir">
-                </ul>
-
-                <div class="nav__menu">
-                    <img src="img/menu.svg" class="nav__img" alt="MENU">
-                </div>           
+            <div class="nav__menu">
+                <img src="img/menu.svg" class="nav__img" alt="MENU">
+            </div>           
         </nav>
         
-        <section class="hero__container container">           
+        
+        <div class="hero__container container">           
             <p class="hero__paragraph">“ Arte en cada rincon de Nicaragua “ Ofrecemos productos artezanales y culturales de Nicaragua.</p>
+        
             <div class="search-container">
-                <input type="text" id="searchInput" placeholder="Buscar...">
-                <ul id="searchResults"></ul>
+                    <input type="text" id="searchInput" placeholder="Buscar...">
+                    <ul id="searchResults"></ul>
             </div>
-        </section>
+         </div>
+        
        
     </header>
     
