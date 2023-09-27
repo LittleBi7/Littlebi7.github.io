@@ -52,8 +52,10 @@ ul {
   /*nav*/
 
   .nav{
-    margin: 1% 2% 0 2%;
-    --padding-container: 15px 10px 20px 10px;
+    margin-top: 0;
+    --padding-container: 0px;
+    padding-top: 30px;
+    padding-bottom: 30px;
     height: 100%;
     display: flex;
     align-items: center;
@@ -62,7 +64,8 @@ ul {
   .nav__logo{
     width: 100%;
     height: auto;
-    margin: 20px;
+    margin-left: 1%;
+    margin-right: 2%;
   }
 
   .nav__title{
@@ -108,7 +111,7 @@ ul {
 
   .nav__img{
     display: block;
-    width: 40px;
+    width: 30px;
   }
 
   .nav__close{
@@ -305,14 +308,35 @@ ul {
 }
 
 
+@media (max-width: 1000px) {
+  /* Estilos para pantallas más pequeñas */
 
+  /* Redefine el tamaño de fuente y el espaciado para los elementos de navegación */
+  .nav__links,
+  #pais,
+  #moneda,
+  .login-link {
+    font-size: 14px; /* Ajusta el tamaño de fuente como desees */
+    padding: 5px 9px; /* Ajusta el espaciado como desees */
+  }
+
+  /* Redefine el tamaño del logo */
+  .nav__logo{
+    width: 80%;
+    height: auto;
+    margin-left: 1%;
+    margin-right: 2%; /* Ajusta el ancho según tus necesidades */
+  }
+
+  /* Otros ajustes de estilo para pantallas pequeñas */
+}
 
 
 @media (max-width:800px){
 
 
   .nav{
-    margin: 2% 0 0 0 ;
+    margin: 0;
     --padding-container: 25px 10px 20px 10px;
     height: 100%;
     display: flex;
