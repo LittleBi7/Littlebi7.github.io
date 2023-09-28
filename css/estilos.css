@@ -77,7 +77,6 @@ body {
   }
 
   .nav__link{
-    
     margin-left: auto;
     padding: 0;
     display: grid;
@@ -122,6 +121,58 @@ body {
   }
 
  
+  
+/*Pais y moneda*/
+
+#pais {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Estilo para las opciones p*/
+#pais option {
+  font-size: 16px;
+  padding: 5px;
+  background-color: #fff;
+  color: #333;
+}
+
+#moneda {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Estilo para las opciones m*/
+#moneda option {
+  font-size: 16px;
+  padding: 5px;
+  background-color: #fff;
+  color: #333;
+}
+
+
+/*fondo blanco"inico de sesion"*/
+.login-link {
+display: inline-block; /* Para que el fondo se aplique correctamente */
+padding: 10px 20px;
+font-size: 16px;
+background-color: #fff; /* Fondo blanco */
+border: 1px solid #ccc; /* Bordes */
+border-radius: 5px;
+color: #333;
+text-decoration: none;
+margin-left: 10px;
+}
+
+/* Estilo para el enlace de Inicia Sesión al pasar el cursor */
+.login-link:hover {
+background-color: #f5f5f5;
+}
+
 
   /* hero__container header*/
   /*Parte de el texto de presentacion y barra de busqueda*/
@@ -139,74 +190,20 @@ body {
     text-align: center;
     font-size: 2em;
     font-style: normal;
-    font-weight: 600;
+    font-weight: 500;
     line-height: normal;
     font-family: 'Doppio One';
   }
 
   .hero__content {
     width: 100%;
-    margin-top: 8%;
+    margin-top: 0%;
     margin-left: 2%;
     display: flex;
     flex-direction: column; /* Apila los elementos verticalmente */
-    align-items: flex-start; /* Alinea a la izquierda */
-    margin-left: 20px; /* Margen izquierdo para evitar que choquen con el borde izquierdo de la pantalla */
   }
 
   
-/*Pais y moneda*/
-
-  #pais {
-    padding: 10px;
-    font-size: 16px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-  }
-  
-  /* Estilo para las opciones p*/
-  #pais option {
-    font-size: 16px;
-    padding: 5px;
-    background-color: #fff;
-    color: #333;
-  }
-  
-  #moneda {
-    padding: 10px;
-    font-size: 16px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-  }
-  
-  /* Estilo para las opciones m*/
-  #moneda option {
-    font-size: 16px;
-    padding: 5px;
-    background-color: #fff;
-    color: #333;
-  }
-
-
-/*fondo blanco"inico de sesion"*/
-.login-link {
-  display: inline-block; /* Para que el fondo se aplique correctamente */
-  padding: 10px 20px;
-  font-size: 16px;
-  background-color: #fff; /* Fondo blanco */
-  border: 1px solid #ccc; /* Bordes */
-  border-radius: 5px;
-  color: #333;
-  text-decoration: none;
-  margin-left: 10px;
-}
-
-/* Estilo para el enlace de Inicia Sesión al pasar el cursor */
-.login-link:hover {
-  background-color: #f5f5f5;
-}
-
-
 /* Estilos de la barra de búsqueda */
 .search-container {
     text-align: center;
@@ -267,22 +264,24 @@ body {
     height: 150px;
     margin-left: 30px;
     margin-bottom: 30px;
-    border-radius: 15px;
+    border-radius: 30px;
+    background-color: #92AFE7;
     overflow: hidden;
     position: relative;
     cursor: pointer;
     box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5);
 }
 
-.imagen-port > img{
-    
+.imagen-port > img{  
+    margin-top: 5%;
     width: 100%;
-    height: 100%;
+    height: 60%;
     object-fit: contain;
     display: block;  
 }
 
 .imagen-port > p{
+  margin-top: -.5%;
   color: #000;
   text-align: center;
   font-family: Domine;
@@ -349,7 +348,7 @@ body {
     height: 70vh;
     min-height: 400px;
     max-height: 550px;
-}
+  }
 
   .nav{
     margin: 0;
@@ -395,9 +394,18 @@ body {
     text-align: center;
   }
 
+  .hero__content {
+    width: 100%;
+    margin-top: 0;
+    margin-left: 2%;
+    display: flex;
+    flex-direction: column; /* Apila los elementos verticalmente */
+  
+  }
+
   .hero__paragraph{
     width: 100vw;
-    margin-top: 50px;
+    margin-top: 0;
     text-align: left;
     margin-bottom: 30px;
     margin-top: 20px;
@@ -424,9 +432,7 @@ body {
 
   /*barra de busq*/
   .search-container {
-    text-align: center;
-    margin-top: 4%;
-    margin-right: 0px;
-}
+    width: 100vw;
+  }
 
-}
+  }
